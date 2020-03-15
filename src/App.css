@@ -1,38 +1,88 @@
+body{
+  font-family: Orbitron , Arial, Helvetica, sans-serif;
+  padding : 0;
+  margin :0;
+}
 .App {
   text-align: center;
+  border : 1px red solid;
+}
+#controlBox{
+  border : 2px green solid;
+}
+#breakBox{
+  border : 1px blue solid;
+  width : 310px;
+  margin : auto;
+}
+#sessionBox{
+  border : 1px blue solid;
+  width : 310px;
+  margin : auto;
+}
+#session{
+  clear: both;
+  width : 300px;
+  border : 1px orange solid;
+  margin : auto;
+}
+.btn{
+  border : none;
+  background-color : blue;
+  color : white;
+  width : 50px;
+  height : 25px;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*small landscape phone screen*//*small landscape phone screen*//*small landscape phone screen*//*small landscape phone screen*/
+@media screen and (orientation : landscape) and (min-width : 600px){
+  #controlBox{
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  #breakBox{
+    float : left;
+  }
+  #sessionBox{
+    float : right;
+  }
+  #session{
+    margin : 10px auto;
   }
 }
+/*small landscape phone screen*//*small landscape phone screen*//*small landscape phone screen*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*medium screen 768 px*//*medium screen 768 px*//*medium screen 768 px*/
+@media screen and (min-width : 768px){
+  #controlBox{
+    box-sizing: border-box;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  #breakBox{
+    float : left;
+    margin-left : 50px;
+  }
+  #sessionBox{
+    float : right;
+    margin-right : 50px;
+  }
+  #session{
+    margin : 15px auto;
   }
 }
+/*medium screen 768 px*//*medium screen 768 px*//*medium screen 768 px*/
+
+/*large screen 992px above*//*large screen 992px above*//*large screen 992px above*/
+@media screen and (min-width : 992px){
+  #breakBox{
+    margin-left : 150px;
+  }
+  #sessionBox{
+    margin-right : 150px;
+  }
+  #session{
+    margin : 25px auto;
+  }
+}
+/*large screen 992px above*//*large screen 992px above*//*large screen 992px above*/
